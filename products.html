@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop diamond jewelry | Aurelle</title>
+<meta name="description" content="Engagement rings, wedding bands, earrings and pendants with certified natural and lab-grown diamonds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="products">
+<div id="site-header"></div>
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="eyebrow">Shop</div>
+    <h1 style="font-size:clamp(2.4rem,5vw,4.2rem)">Diamond jewelry, made to order</h1>
+    <p class="lede">Every piece below can be set with a natural or lab-grown diamond. Prices are samples to show the layout; replace them with your own.</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Filter by category" id="chips">
+      <button class="chip" type="button" data-cat="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-cat="rings" aria-pressed="false">Engagement rings</button>
+      <button class="chip" type="button" data-cat="bands" aria-pressed="false">Wedding bands</button>
+      <button class="chip" type="button" data-cat="earrings" aria-pressed="false">Earrings</button>
+      <button class="chip" type="button" data-cat="pendants" aria-pressed="false">Pendants</button>
+    </div>
+    <div class="selects">
+      <label for="type">Diamond
+        <select id="type"><option value="all">Natural and lab-grown</option><option value="natural">Natural</option><option value="lab">Lab-grown</option></select>
+      </label>
+      <label for="sort">Sort
+        <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+      </label>
+    </div>
+  </div>
+
+  <div class="count" id="count" aria-live="polite"></div>
+  <div class="products" id="products"></div>
+  <p class="note">All items shown are sample products. Lab-grown diamonds are labelled as lab-grown on every listing.</p>
+</main>
+
+<div id="site-footer" style="margin-top:96px"></div>
+<script src="partials.js"></script>
+<script src="products.js"></script>
+</body>
+</html>
